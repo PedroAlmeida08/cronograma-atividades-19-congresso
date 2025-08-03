@@ -1,0 +1,91 @@
+/* Estilos para simular uma página A4 em modo paisagem e customizações com a paleta */
+body {
+  background-color: #e2e8f0; /* cinza claro de fundo */
+  font-family: "Poppins", sans-serif;
+  color: #2a351d; /* Cor de texto principal da paleta */
+}
+.page {
+  background-color: white;
+  width: 297mm; /* Largura de A4 paisagem */
+  min-height: 210mm; /* Altura de A4 paisagem */
+  margin: 2rem auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 15mm;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+.page-content {
+  flex-grow: 1;
+}
+@media print {
+  body {
+    background-color: white;
+  }
+  .page {
+    width: 100%;
+    min-height: initial;
+    margin: 0;
+    box-shadow: none;
+    padding: 10mm;
+    page-break-after: always;
+  }
+  .no-print {
+    display: none;
+  }
+}
+
+/* Cores da Paleta */
+.bg-palette-lightest {
+  background-color: #dee4d5;
+}
+.bg-palette-light {
+  background-color: #a8b19f;
+}
+.bg-palette-medium {
+  background-color: #4b6145;
+}
+.bg-palette-dark {
+  background-color: #2a351d;
+}
+.bg-palette-darkest {
+  background-color: #042600;
+}
+
+.text-palette-lightest {
+  color: #dee4d5;
+}
+.text-palette-light {
+  color: #a8b19f;
+}
+.text-palette-medium {
+  color: #4b6145;
+}
+.text-palette-dark {
+  color: #2a351d;
+}
+.text-palette-darkest {
+  color: #042600;
+}
+
+.border-palette-medium {
+  border-color: #4b6145;
+}
+
+/* Ajustes finos */
+.main-title {
+  color: #042600;
+  font-weight: 700;
+  text-align: center;
+  line-height: 1.2;
+}
+.table-header {
+  background-color: #4b6145;
+  color: #ffffff;
+}
+.table-row-light {
+  background-color: #ffffff;
+}
+.table-row-dark {
+  background-color: #dee4d5;
+}

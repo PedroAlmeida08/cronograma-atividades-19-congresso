@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calendário de Atividades - 19º Congresso Teen</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/h_index.css" />
+  </head>
+  <body>
+    <!-- Página 1: Capa -->
+    <div class="page bg-palette-lightest">
+      <div
+        class="page-content flex flex-col justify-center items-center text-center"
+      >
+        <img
+          src="assets/Logo 19 Congresso Teen.png"
+          alt="Logo 19º Congresso Teen"
+          class="w-48 h-48 object-contain mb-8"
+        />
+        <h1 class="main-title text-5xl mb-6">Calendário de Atividades</h1>
+        <h2 class="text-palette-darkest text-4xl font-semibold">
+          19º Congresso Teen
+        </h2>
+      </div>
+      <footer class="text-center mt-auto">
+        <p class="text-palette-medium font-semibold">Paleta de Cores</p>
+        <div class="flex justify-center space-x-4 mt-2">
+          <div
+            class="w-10 h-10 rounded-full bg-palette-lightest border border-gray-400"
+          ></div>
+          <div class="w-10 h-10 rounded-full bg-palette-light"></div>
+          <div class="w-10 h-10 rounded-full bg-palette-medium"></div>
+          <div class="w-10 h-10 rounded-full bg-palette-dark"></div>
+          <div class="w-10 h-10 rounded-full bg-palette-darkest"></div>
+        </div>
+      </footer>
+    </div>
+
+    <!-- Página 2: Cronograma (Parte 1) -->
+    <div class="page">
+      <header
+        class="flex justify-between items-center pb-4 border-b-2 border-palette-medium mb-6"
+      >
+        <img
+          src="assets/Logo 19 Congresso Teen.png"
+          alt="Logo"
+          class="w-16 h-16"
+        />
+        <h2 class="text-3xl font-bold text-palette-darkest">
+          Cronograma de Atividades
+        </h2>
+        <div class="w-16"></div>
+      </header>
+      <div class="page-content">
+        <table class="w-full text-left border-collapse">
+          <thead>
+            <tr class="table-header">
+              <th class="p-2 text-base">Data</th>
+              <th class="p-2 text-base text-center">Dia</th>
+              <th class="p-2 text-base text-center">Horário</th>
+              <th class="p-2 text-base">Atividade</th>
+            </tr>
+          </thead>
+          <tbody id="schedule-part-1">
+            <!-- Conteúdo será inserido via JavaScript -->
+          </tbody>
+        </table>
+      </div>
+      <footer class="text-center text-palette-light mt-4">Página 1 de 3</footer>
+    </div>
+
+    <!-- Página 3: Cronograma (Parte 2) -->
+    <div class="page">
+      <header
+        class="flex justify-between items-center pb-4 border-b-2 border-palette-medium mb-6"
+      >
+        <img
+          src="assets/Logo 19 Congresso Teen.png"
+          alt="Logo"
+          class="w-16 h-16"
+        />
+        <h2 class="text-3xl font-bold text-palette-darkest">
+          Cronograma de Atividades
+        </h2>
+        <div class="w-16"></div>
+      </header>
+      <div class="page-content">
+        <table class="w-full text-left border-collapse">
+          <thead>
+            <tr class="table-header">
+              <th class="p-2 text-base">Data</th>
+              <th class="p-2 text-base text-center">Dia</th>
+              <th class="p-2 text-base text-center">Horário</th>
+              <th class="p-2 text-base">Atividade</th>
+            </tr>
+          </thead>
+          <tbody id="schedule-part-2">
+            <!-- Conteúdo será inserido via JavaScript -->
+          </tbody>
+        </table>
+      </div>
+      <footer class="text-center text-palette-light mt-4">Página 2 de 3</footer>
+    </div>
+
+    <!-- Página 4: Cronograma (Parte 3) -->
+    <div class="page">
+      <header
+        class="flex justify-between items-center pb-4 border-b-2 border-palette-medium mb-6"
+      >
+        <img
+          src="assets/Logo 19 Congresso Teen.png"
+          alt="Logo"
+          class="w-16 h-16"
+        />
+        <h2 class="text-3xl font-bold text-palette-darkest">
+          Cronograma de Atividades
+        </h2>
+        <div class="w-16"></div>
+      </header>
+      <div class="page-content">
+        <table class="w-full text-left border-collapse">
+          <thead>
+            <tr class="table-header">
+              <th class="p-2 text-base">Data</th>
+              <th class="p-2 text-base text-center">Dia</th>
+              <th class="p-2 text-base text-center">Horário</th>
+              <th class="p-2 text-base">Atividade</th>
+            </tr>
+          </thead>
+          <tbody id="schedule-part-3">
+            <!-- Conteúdo será inserido via JavaScript -->
+          </tbody>
+        </table>
+      </div>
+      <footer class="text-center text-palette-light mt-4">Página 3 de 3</footer>
+    </div>
+
+    <script src="scripts/populateTable.js"></script>
+  </body>
+</html>
